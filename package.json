@@ -1,0 +1,19 @@
+{
+  "name": "frogzzbotz",
+  "version": "1.0.0",
+  "description": "Clean CommonJS WhatsApp bot base with a lightweight plugin system.",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check src/core/Okta.js && node --check config/index.js && node --check src/lib/identity.js && node --check src/lib/message-store.js"
+  },
+  "dependencies": {
+    "@itsliaaa/baileys": "git+https://github.com/itsliaaa/baileys.git#b1c3b684b64e584d7d6f2e51220cc5e8",
+    "dotenv": "^16.4.5",
+    "pino": "^9.7.0"
+  }
+}
